@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Todo Push Reminder</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header><h1>📋 Todo + Push Reminders</h1></header>
+
+    <section class="form">
+      <input id="title" placeholder="Task title" />
+      <input id="time" type="datetime-local" />
+      <textarea id="desc" placeholder="Description (optional)"></textarea>
+      <div class="buttons">
+        <button id="subscribeBtn">Enable Push</button>
+        <button id="createBtn">Create & Schedule</button>
+      </div>
+    </section>
+
+    <section>
+      <h2>Scheduled Tasks</h2>
+      <ul id="tasks"></ul>
+    </section>
+
+    <footer>
+      <small>Note: For production, host on HTTPS. Localhost works for testing in Chrome.</small>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
